@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/The-Role-of-Artificial-Intelligence-/static/css/main.1ddbf3e9.css",
+    "main.js": "/The-Role-of-Artificial-Intelligence-/static/js/main.8015b5b3.js",
+    "static/js/453.453f2ef2.chunk.js": "/The-Role-of-Artificial-Intelligence-/static/js/453.453f2ef2.chunk.js",
+    "index.html": "/The-Role-of-Artificial-Intelligence-/index.html",
+    "main.1ddbf3e9.css.map": "/The-Role-of-Artificial-Intelligence-/static/css/main.1ddbf3e9.css.map",
+    "main.8015b5b3.js.map": "/The-Role-of-Artificial-Intelligence-/static/js/main.8015b5b3.js.map",
+    "453.453f2ef2.chunk.js.map": "/The-Role-of-Artificial-Intelligence-/static/js/453.453f2ef2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ddbf3e9.css",
+    "static/js/main.8015b5b3.js"
+  ]
+}
