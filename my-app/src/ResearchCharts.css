@@ -1,0 +1,372 @@
+.research-charts {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.charts-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 32px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.charts-header h1 {
+  margin: 0 0 16px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.charts-header p {
+  margin: 0;
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.chart-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 16px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fafafa;
+}
+
+.chart-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  flex: 1;
+  padding-right: 16px;
+}
+
+.export-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.export-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.export-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.export-btn.loading {
+  background: #6b7280;
+}
+
+.chart-content {
+  padding: 24px;
+  min-height: 400px;
+}
+
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-footer {
+  padding: 24px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chart-source {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.chart-description {
+  margin: 0;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.bias-details,
+.consistency-analysis,
+.ai-analysis,
+.regional-insights {
+  margin-top: 16px;
+}
+
+.bias-details h4,
+.consistency-analysis h4,
+.ai-analysis h4,
+.regional-insights h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.bias-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.bias-details li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.consistency-analysis p,
+.ai-analysis p,
+.regional-insights p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.conceptual-framework {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+  padding: 24px;
+}
+
+.conceptual-framework h2 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.research-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.research-table th {
+  background: #f8fafc;
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.research-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  vertical-align: top;
+}
+
+.research-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.research-table .improvement {
+  font-weight: 600;
+  color: #10b981;
+  text-align: center;
+}
+
+.export-success {
+  position: fixed;
+  top: 100px;
+  right: 24px;
+  background: #10b981;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.charts-footer {
+  text-align: center;
+  padding: 32px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  margin-top: 32px;
+}
+
+.charts-footer p {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.charts-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Custom Tooltip Styles */
+.custom-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-label {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+.custom-tooltip p {
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.custom-tooltip p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .chart-header h2 {
+    padding-right: 0;
+  }
+  
+  .export-btn {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .research-charts {
+    padding: 16px;
+  }
+  
+  .charts-header {
+    padding: 24px;
+  }
+  
+  .charts-header h1 {
+    font-size: 28px;
+  }
+  
+  .charts-header p {
+    font-size: 16px;
+  }
+  
+  .chart-header {
+    padding: 20px;
+  }
+  
+  .chart-header h2 {
+    font-size: 18px;
+  }
+  
+  .chart-content {
+    padding: 20px;
+  }
+  
+  .chart-footer {
+    padding: 20px;
+  }
+  
+  .conceptual-framework {
+    padding: 20px;
+  }
+  
+  .conceptual-framework h2 {
+    font-size: 20px;
+  }
+  
+  .research-table {
+    font-size: 12px;
+  }
+  
+  .research-table th,
+  .research-table td {
+    padding: 12px 8px;
+  }
+  
+  .export-success {
+    right: 16px;
+    left: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-header h2 {
+    font-size: 16px;
+  }
+  
+  .export-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  .charts-footer {
+    padding: 24px 20px;
+  }
+} 
